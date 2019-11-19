@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router(); 
 
-router.get('/nou', (req, res) => {
+router.get('/', (req, res) => {
     res.send('nameyeff');
 });
 
