@@ -8,6 +8,6 @@ const indexRoute = require('./src/routes/index');
 app.use('/', indexRoute);
 app.use(express.static('public'))
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log('Example app listening on port 3000!');
 });
