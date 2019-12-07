@@ -5,12 +5,12 @@ const blogPosts = require('../../firebase.js');
 
 const sampleData = {  
     title: 'Just a prank',
-    text: 'My name not actually yeff :(',
+    text: 'My name Yujie',
     author: 'Yujie Qiu'
 };
 
 router.get('/', (req, res) => {
-    res.send('nameyeff');
+    res.send('Welcome to /');
 });
 
 router.get('/getDoc', (req, res) => {
@@ -21,7 +21,7 @@ router.get('/getDoc', (req, res) => {
             res.send(doc.data()); 
         }
         else {
-            res.send('oof something went wrong');
+            res.send(' something went wrong');
         }
     })
     .catch(err => {
